@@ -1,0 +1,119 @@
+<html>
+    <head>
+        <h2>Interactive Website</h2>
+        <link rel="stylesheet" href="cal.css">
+         
+    </head>
+<!-- <button class="tablink" onclick="openPage('About', this, 'gold')">Mission Satement</button> -->
+<button class="tablink" onclick="openPage('Home', this, 'green')" id="defaultOpen" >weekly to do list</button>
+<button class="tablink" onclick="openPage('About', this, 'green')">Mission Statement</button>
+</head>
+<div id="Home" class="tabcontent">
+    <head>
+            <h2>Get it done</h1>    
+    </head>
+
+    <body>
+<div class="container">
+      <div class="day" id="mon"></div>
+        <div id="myDIV" class="header">
+            <h7 class="dow" >Monday</h7>
+               <p><input type="text" id="myInput" class =input1 placeholder="Things to do"></p>
+               <span onclick="newElement()" class="urgent" id="go">Add important event</span>
+                <span onclick="newElement()" class="addBtn" id="n1"><p> Add event to Monday</p></span>
+        </div>
+              <ul id="myUL1" class="list"> 
+                 
+                <!-- <ul id="myUL" class="list"> -->
+                </ul>
+              </ul>
+</div> 
+        <div class="container">
+        <div class="day" id="tues"></div>
+        <div id="myDIV" class="header">
+                <h7 class="dow" >Tuesday</h7>
+               <p><input type="text" id="myInput2" class =input1 placeholder="Things to do"></p>
+               <span onclick="newElement()" class="urgent" id="go">Add important event</span>
+                <span onclick="newElement(2)" class="addBtn"><p> Add event to Tues</p></span>
+              </div>
+              <ul id="myUL2" class="list">
+                <!-- <ul id="myUL" class="list"> -->
+                    </ul>
+              </ul>
+        </div>
+
+        <div class="container">
+      <div class="day" id="wed"></div>
+      <div id="myDIV" class="header">
+              <h7 class="dow" >Wednesday</h7>
+             <p><input type="text" id="myInput" class =input1 placeholder="Things to do"></p>
+             <span onclick="newElement()" class="urgent" id="go">Add important event</span>
+              <span onclick="newElement(3)" class="addBtn"><p> Add event to Wednesday</p></span>
+            </div>
+            <ul id="myUL3" class="list">
+            </ul>
+        </div>
+    <div class="container">
+      <div class="day" id="thurs"></div>
+      <div id="myDIV" class="header">
+              <h7 class="dow" >Thursday</h7>
+             <p><input type="text" id="myInput" class =input1 placeholder="Things to do"></p>
+             <span onclick="newElement()" class="urgent" id="go">Add important event</span>
+              <span onclick="newElement(4)" class="addBtn"><p> Add event to Thursday</p></span>
+            </div>
+            <ul id="myUL4" class="list">
+            </ul>
+        </div>
+        <div class="container">
+      <div class="day" id="fri"></div>
+      <div id="myDIV" class="header">
+              <h7 class="dow" >Friday</h7>
+             <p><input type="text" id="myInput" class =input1 placeholder="Things to do"></p>
+             <span onclick="newElement()" class="urgent" id="go">Add important event</span>
+              <span onclick="newElement(5)" class="addBtn"><p> Add event to Friday</p></span>
+            </div>
+            <ul id="myUL5" class="list">
+            </ul>
+        </div>
+
+        <div class="container">
+      <div class="day" id="sat"></div>
+      <div id="myDIV" class="header">
+              <h7 class="dow" >Saturday</h7>
+             <p><input type="text" id="myInput" class =input1 placeholder="Things to do"></p>
+             <span onclick="newElement()" class="urgent" id="go">Add important event</span>
+              <span onclick="newElement(6)" class="addBtn"><p> Add event to Saturday</p></span>
+            </div>
+            <ul id="myUL6" class="list">
+            </ul>
+        </div>
+
+        <div class="container">
+        <div class="day" id="sun"></div>
+        <div id="myDIV" class="header">
+              <h7 class="dow" >Sunday</h7>
+             <p><input type="text" id="myInput" class =input1 placeholder="Things to do"></p>
+             <span onclick="newElementc()" class="urgent" id="go">Add important event</span>
+              <span onclick="newElement(7)" class="addBtn"><p> Add event to Sunday</p></span>
+            </div>
+            <ul id="myUL7" class="list">
+            </ul>
+            </div>
+</div>
+
+<div id="About" class="tabcontent">
+    <head>
+        <h1>Goal:</h1>
+        <h4>Many students struggle planning and staying on track with so many events happening 
+            during their highschool experience. This website is to help school students organize
+             and balance their school and outside activities and get things done in a timely manner.
+        </h4>
+
+    </head>
+</div>
+</div>
+<script  src="cal.js"></script>
+
+</body>
+
+</html>
