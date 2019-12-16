@@ -1,8 +1,3 @@
-//might do if <1 event in list print good job
-// to do list
-//ask why only mondy outputs
-// if important clicked make text red 
-//clear for next week button
 
 function openPage(pageName, elmnt, color) {
     let i, tabcontent, tablinks;
@@ -48,29 +43,24 @@ list.addEventListener('click', function(ev) {
 }, false);
 
 
-//mondayonly
 function newElement(daynum) {
-     var mon= (document.getElementById('mon').value)
-    //  var tues=(document.getElementById('tues').value)
-  // if(daynum ==2){
-  //   myinmput=("")
-  // }
-  // if(daynum ==3){
-
-  // }
-  // if(daynum == 4)
-    
-     var daynum = document.getElementById("myUL1")
+    let z = "myUl" + daynum;
+    let y = "myInput" + daynum;
+    let inside = document.getElementById(z);
+    let out= document.getElementById(y);
+    console.log(y);
+    console.log(z);
+    console.log(inside);
     var li = document.createElement("li");
-    var inputValue = document.getElementById("myInput").value;
+    var inputValue = document.getElementById("myInput" + daynum).value;
     var t = document.createTextNode(inputValue);
     li.appendChild(t);
     if (inputValue === '') {
       alert("You must write something to do");
     } else {
-      document.getElementById("myUL1").appendChild(li);
+      document.getElementById("myUL"+ daynum).appendChild(li);
     }
-    document.getElementById("myInput").value = "";
+    document.getElementById("myInput" +daynum).value = "";
     var span = document.createElement("SPAN");
     //create x to delete next to doc
     var txt = document.createTextNode("\u00D7");
@@ -84,8 +74,38 @@ function newElement(daynum) {
       }
     }
   }
-  
-  
-  
+
+  function newHighlight(daynum) {
+    let x = "Ulmy" + daynum;
+    let c = "myInput" + daynum;
+    let inside = document.getElementById(x);
+    let out= document.getElementById(c);
+    console.log(c);
+    console.log(x);
+    console.log(inside);
+    var li = document.createElement("li");
+    var inputValue = document.getElementById("myInput" + daynum).value;
+    var t = document.createTextNode(inputValue);
+    li.appendChild(t);
+    if (inputValue === '') {
+      alert("You must write something to do if it is IMPORTANT");
+    } else {
+      document.getElementById("ULmy"+ daynum).appendChild(li);
+    }
+    document.getElementById("myInput" +daynum).value = "";
+    var span = document.createElement("SPAN");
+    //create x to delete next to doc
+    var txt = document.createTextNode("\u00D7");
+    span.className = "close";
+    span.appendChild(txt);
+    li.appendChild(span);
+    for (i = 0; i < close.length; i++) {
+      close[i].onclick = function() {
+        var div = this.parentElement;
+        div.style.display = "none";
+      }
+    }
+  }
+
 
   // document.addEventListener("DOMContentLoaded", ready);
