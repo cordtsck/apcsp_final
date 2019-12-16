@@ -1,4 +1,6 @@
 
+
+
 function openPage(pageName, elmnt, color) {
     let i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
@@ -106,6 +108,16 @@ function newElement(daynum) {
       }
     }
   }
+  function newReset(daynum){
+    var inputValue = document.getElementById("myInput" + daynum).value;
+    var t = document.createTextNode(inputValue);
+    if (inputValue ==='') {
+      alert("no events to clear");
+    }else{
+      
+    }
 
+  }
+  
 
   // document.addEventListener("DOMContentLoaded", ready);

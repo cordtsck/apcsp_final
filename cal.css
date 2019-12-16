@@ -2,9 +2,7 @@
 .list2{
   color: white;
   font-size:15px;
-
 }
-
 .container{
     background-color: #555;
     color: green;
@@ -19,7 +17,6 @@
     display: inline-block;
   
 }
-
 .urgent{
   background:white;
   font-size:13px;
