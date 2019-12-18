@@ -1,6 +1,4 @@
 
-
-
 function openPage(pageName, elmnt, color) {
     let i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
@@ -11,7 +9,7 @@ function openPage(pageName, elmnt, color) {
     for (i = 0; i < tablinks.length; i++) {
       tablinks[i].style.backgroundColor = "";
     }
-    //specific tab content
+    // tab content
     document.getElementById(pageName).style.display = "block";
     elmnt.style.backgroundColor = color;
   }
@@ -19,7 +17,7 @@ function openPage(pageName, elmnt, color) {
 var i;
 for (i = 0; i < myNodelist.length; i++) {
   var span = document.createElement("SPAN");
-  //allows it t
+
   var txt = document.createTextNode("\u00D7");
   span.className = "close";
   span.appendChild(txt);
@@ -108,5 +106,5 @@ function newElement(daynum) {
       }
     }
   }
-  
-  // document.addEventListener("DOMContentLoaded", ready);
+ //defaultOpen
+  document.getElementById("defaultOpen").click();
